@@ -1,3 +1,8 @@
+
+# Folder structure guide
+
+[Folder structure guide](https://angular-folder-structure.readthedocs.io/en/latest/modules.html) 
+
 # CmsBlog
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
