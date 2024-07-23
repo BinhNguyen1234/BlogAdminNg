@@ -1,8 +1,8 @@
-import { ApplicationConfig, BootstrapOptions, CompilerOptions, provideZoneChangeDetection } from '@angular/core';
-import { provideRouter } from '@angular/router';
-import { NgZone } from '@angular/core'
-import { routes } from './app.routes';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ApplicationConfig, BootstrapOptions, CompilerOptions, provideZoneChangeDetection } from "@angular/core";
+import { provideRouter } from "@angular/router";
+import { NgZone } from "@angular/core"
+import { routes } from "./app.routes";
+import { provideAnimationsAsync } from "@angular/platform-browser/animations/async";
 
 export const appConfig: ApplicationConfig = {
   providers: [

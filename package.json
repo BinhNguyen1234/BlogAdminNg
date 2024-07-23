@@ -8,7 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "json-server": "npx json-server --watch mockup-json-server.json",
-    "start-json-server": "echo 'Running with start with json-server' && npm run json-server | npm run start"
+    "start-json-server": "echo 'Running with start with json-server' && npm run json-server | npm run start",
+    "lint": "ng lint",
+    "fix": "npx eslint --fix ./src"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +24,7 @@
     "@angular/platform-browser": "^18.1.0",
     "@angular/platform-browser-dynamic": "^18.1.0",
     "@angular/router": "^18.1.0",
+
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
@@ -31,6 +34,8 @@
     "@angular/cli": "^18.1.1",
     "@angular/compiler-cli": "^18.1.0",
     "@types/jasmine": "~5.1.0",
+    "angular-eslint": "18.1.0",
+    "eslint": "^9.6.0",
     "jasmine-core": "~5.1.0",
     "json-server": "^1.0.0-beta.1",
     "karma": "~6.4.0",
@@ -38,6 +43,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.5.2"
+    "typescript": "~5.5.2",
+    "typescript-eslint": "8.0.0-alpha.38",
+    "@stylistic/eslint-plugin-ts": "^2.3.0"
   }
 }

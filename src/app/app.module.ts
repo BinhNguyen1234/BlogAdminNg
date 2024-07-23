@@ -1,9 +1,9 @@
-import { NgModule, provideZoneChangeDetection } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { provideRouter, RouterOutlet } from '@angular/router';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { routes } from './app.routes';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { AppComponent } from "./app.component";
+import { provideRouter, RouterModule } from "@angular/router";
+import { provideAnimationsAsync } from "@angular/platform-browser/animations/async";
+import { routes } from "./app.routes";
 
 
 
@@ -11,7 +11,7 @@ import { routes } from './app.routes';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterOutlet
+    RouterModule
   ],
   providers: [
     provideRouter(routes), 

@@ -1,6 +1,6 @@
-import { Routes } from '@angular/router';
-import { TestLayoutComponent } from './layout/test-layout/test-layout.component';
-import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
+import { Routes } from "@angular/router";
+import { TestLayoutComponent } from "./layout/test-layout/test-layout.component";
+import { AdminLayoutComponent } from "./layout/admin-layout/admin-layout.component";
 export const routes: Routes = [
     {
         path: "test",
@@ -8,9 +8,9 @@ export const routes: Routes = [
         title: "test"
     },
     {
-        path: '',
-        redirectTo: 'admin',
-        pathMatch: 'full'
+        path: "",
+        redirectTo: "admin",
+        pathMatch: "full"
     },
     {
         path: "admin",
