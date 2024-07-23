@@ -3,13 +3,8 @@ import { TestLayoutComponent } from "./layout/test-layout/test-layout.component"
 import { AdminLayoutComponent } from "./layout/admin-layout/admin-layout.component";
 export const routes: Routes = [
     {
-        path: "test",
-        component: TestLayoutComponent,
-        title: "test"
-    },
-    {
         path: "",
-        redirectTo: "admin",
+        redirectTo: "dashboard",
         pathMatch: "full"
     },
     {
@@ -32,8 +27,28 @@ export const routes: Routes = [
                 component: TestLayoutComponent,
             },
             {
+                path: "media",
+                title: "media",
+                component: TestLayoutComponent,
+            },
+            {
                 path: "settings",
                 title: "settings",
+                component: TestLayoutComponent,
+            },
+            {
+                path: "categories",
+                title: "categories",
+                component: TestLayoutComponent,
+            },
+            {
+                path: "tag",
+                title: "Tag",
+                component: TestLayoutComponent,
+            },
+            {
+                path: "comment",
+                title: "Tag",
                 component: TestLayoutComponent,
             }
         ]
@@ -43,6 +58,10 @@ export const routes: Routes = [
         component: TestLayoutComponent,
         title: "auth"
     },
-    
+    {
+        path: "test",
+        component: TestLayoutComponent,
+        title: "test"
+    },
 
 ];
