@@ -1,11 +1,9 @@
-<form class="example-form">
-    <mat-form-field class="example-full-width">
-      <mat-label>Assignee</mat-label>
-      <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
-      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
-        @for (option of filteredOptions | async; track option) {
-          <mat-option [value]="option">{{option.name}}</mat-option>
-        }
-      </mat-autocomplete>
-    </mat-form-field>
-  </form>
+<mat-form-field [style]="''" class="search-bar">
+  <mat-icon svgIcon="search"></mat-icon>
+  <input [placeholder]="placeholder" matInput [matAutocomplete]="show" type="text">
+  <mat-autocomplete #show="matAutocomplete">
+    <mat-option>option 1</mat-option>
+    <mat-option>option 1</mat-option>
+    <mat-option>option 1</mat-option>
+  </mat-autocomplete>
+</mat-form-field>

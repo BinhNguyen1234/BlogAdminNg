@@ -21,9 +21,9 @@
     "baseUrl": ".",
     "paths": {
       "@app/*": ["src/app/core/*"],
-      "@shared": ["src/app/shared/*"],
-      "@env": ["src/enviroments/*"],
-      "@modules": ["src/app/modules/*"]
+      "@shared/*": ["src/app/shared/*"],
+      "@env/*": ["src/enviroments/*"],
+      "@modules/*": ["src/app/modules/*"]
     },
     "lib": [
       "ES2022",
