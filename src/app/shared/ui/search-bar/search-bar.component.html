@@ -1,9 +1,8 @@
-<mat-form-field [style]="''" class="search-bar">
-  <mat-icon svgIcon="search"></mat-icon>
-  <input [placeholder]="placeholder" matInput [matAutocomplete]="show" type="text">
-  <mat-autocomplete #show>
-    <mat-option>option 1</mat-option>
-    <mat-option>option 1</mat-option>
-    <mat-option>option 1</mat-option>
-  </mat-autocomplete>
-</mat-form-field>
+<form [formGroup]="searchBarForm" (ngSubmit)="handleSubmit()" >
+  <mat-form-field class="search-bar">
+    <mat-icon matPrefix svgIcon="search"></mat-icon>
+    <input [formControlName]="'searchString'" [placeholder]="placeholder" matInput [matAutocomplete]="refAutoComplete" type="text">
+    <mat-autocomplete #refAutoComplete>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

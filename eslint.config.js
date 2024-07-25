@@ -40,7 +40,15 @@ module.exports = tseslint.config(
         {
           "allowTemplateLiterals": true
         }
-      ]
+      ],
+      "@stylistic/ts/semi" : [
+        "error",
+        "always",
+        {
+          "omitLastInOneLineBlock": true,
+          "omitLastInOneLineClassBody": true 
+        }
+      ],
     },
   },
   {

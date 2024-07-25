@@ -6,6 +6,6 @@ import { AppModule } from "./app/app.module";
 import { config } from "./app/app.config";
 
 
-platformBrowser().bootstrapModule(AppModule,config).catch((err) => console.error(err))
+platformBrowser().bootstrapModule(AppModule,config).catch((err) => console.error(err));
 // bootstrapApplication(AppComponent, appConfig)
 //   .catch((err) => console.error(err));

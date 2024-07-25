@@ -1,5 +1,9 @@
 
 
-:host input {
+:host{
+    height: 300px;
     width: 50%;
+}
+:host mat-form-field{
+    height: 100%;
 }

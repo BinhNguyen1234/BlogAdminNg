@@ -1,8 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { IconRegisterComponent } from './icon-register.component';
+import { IconRegisterComponent } from "./icon-register.component";
 
-describe('IconRegisterComponent', () => {
+describe("IconRegisterComponent", () => {
   let component: IconRegisterComponent;
   let fixture: ComponentFixture<IconRegisterComponent>;
 
@@ -17,7 +17,7 @@ describe('IconRegisterComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
