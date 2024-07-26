@@ -37,4 +37,11 @@ jobs:
         run: npm ci
       - name: Checking lint
         run: npx ng lint
+  run-unnit-test:
+    runs-on: ubuntu-latest
+    name: run unitest-ting
+    steps:
+      - name: Checking lint
+        run: npx ng lint
+
   # This workflow contains a single job called "greet"
