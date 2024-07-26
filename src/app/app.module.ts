@@ -17,7 +17,7 @@ import { UiModule } from "@shared/ui/ui.module";
   ],
   providers: [
     provideRouter(routes), 
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
   ],
   bootstrap: [AppComponent]
 })

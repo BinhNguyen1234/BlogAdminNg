@@ -49,6 +49,8 @@ module.exports = tseslint.config(
           "omitLastInOneLineClassBody": true 
         }
       ],
+      "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+      "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
     },
   },
   {
