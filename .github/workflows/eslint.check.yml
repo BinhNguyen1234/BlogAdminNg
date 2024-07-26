@@ -37,8 +37,8 @@ jobs:
         run: npm ci
       - name: Checking lint
         run: npx ng lint
-      # - name: Running unit-test
-      #   run: npx ng test
+      - name: Running unit-test
+        run: npx ng test
   # run-unnit-test:
   #   runs-on: ubuntu-latest
   #   name: run unitest-ting
