@@ -29,6 +29,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Show npm version on runner
+        run: npm -v
+      - name: Show node version on runner
+        run: node -v
       - name: Install node package
         run: npm ci
       - name: Checking lint
