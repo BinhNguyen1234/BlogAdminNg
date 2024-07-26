@@ -11,6 +11,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Eslint was be setup by command bellow
 `ng add @angular-eslint/schematics`  
 
+## Ad karmar config 
+
+`ng g config karma`
 
 ## Development server
 
