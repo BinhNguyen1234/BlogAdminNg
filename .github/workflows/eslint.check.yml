@@ -36,5 +36,5 @@ jobs:
       - name: Install node package
         run: npm ci
       - name: Checking lint
-        run: ng lint
+        run: npx ng lint
   # This workflow contains a single job called "greet"
