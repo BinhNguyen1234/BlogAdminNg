@@ -18,7 +18,7 @@ on:
 jobs:
   check-eslint:
     runs-on: ubuntu-latest
-    name: Eslint checking
+    name: Eslint checking and running unit-test
     strategy:
       matrix:
         node-version: ['20.x.x']
@@ -37,23 +37,25 @@ jobs:
         run: npm ci
       - name: Checking lint
         run: npx ng lint
-  run-unnit-test:
-    runs-on: ubuntu-latest
-    name: run unitest-ting
-    steps:
-      - name: Sync - pull source code
-        uses: actions/checkout@v4
-      - name: Set up Node.js runtime ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Show npm version on runner
-        run: npm -v
-      - name: Show node version on runner
-        run: node -v
-      - name: Install node package
-        run: npm ci
-      - name: Checking lint
+      - name: Running unit-test
         run: npx ng test
+  # run-unnit-test:
+  #   runs-on: ubuntu-latest
+  #   name: run unitest-ting
+  #   steps:
+  #     - name: Sync - pull source code
+  #       uses: actions/checkout@v4
+  #     - name: Set up Node.js runtime ${{ matrix.node-version }}
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: ${{ matrix.node-version }}
+  #     - name: Show npm version on runner
+  #       run: npm -v
+  #     - name: Show node version on runner
+  #       run: node -v
+  #     - name: Install node package
+  #       run: npm ci
+  #     - name: Run unitest-ting
+  #       run: npx ng test
 
   # This workflow contains a single job called "greet"
