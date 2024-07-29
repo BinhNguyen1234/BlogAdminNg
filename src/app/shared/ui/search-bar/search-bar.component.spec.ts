@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from "@angular/core/testing";
 
 import { SearchBarComponent } from "./search-bar.component";
 import { UiModule } from "../ui.module";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { provideAnimations } from "@angular/platform-browser/animations";
 
 
 describe("SearchBarComponent", () => {
@@ -12,7 +12,8 @@ describe("SearchBarComponent", () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [SearchBarComponent],
-      imports: [UiModule, BrowserAnimationsModule]
+      imports: [UiModule],
+      providers: [provideAnimations()]
     })
     .compileComponents();
 
