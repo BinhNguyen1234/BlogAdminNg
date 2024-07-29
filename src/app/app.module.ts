@@ -2,9 +2,9 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "./app.component";
 import { provideRouter, RouterModule } from "@angular/router";
-import { provideAnimationsAsync } from "@angular/platform-browser/animations/async";
 import { routes } from "./app.routes";
 import { UiModule } from "@shared/ui/ui.module";
+import { provideAnimations } from "@angular/platform-browser/animations";
 
 
 
@@ -16,8 +16,8 @@ import { UiModule } from "@shared/ui/ui.module";
     UiModule
   ],
   providers: [
-    provideRouter(routes), 
-    provideAnimationsAsync(),
+    provideRouter(routes),
+    provideAnimations()
   ],
   bootstrap: [AppComponent]
 })
