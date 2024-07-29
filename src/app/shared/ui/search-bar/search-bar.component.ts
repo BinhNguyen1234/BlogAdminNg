@@ -1,3 +1,4 @@
+
 import { Component, Input } from "@angular/core";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
 
@@ -16,8 +17,8 @@ export class SearchBarComponent{
       Validators.minLength(1)
     ])
   });
-  handleSubmit(){
-    console.log(this.searchBarForm.value.searchString);
+  handleSubmit(event: SubmitEvent){
+    event.preventDefault();
   }
 }
 

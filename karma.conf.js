@@ -41,6 +41,7 @@ module.exports = function (config) {
       }
     },
     restartOnFileChange: true,
-    singleRun: true
+    singleRun: true,
+    logLevel: config.LOG_INFO,
   });
 };

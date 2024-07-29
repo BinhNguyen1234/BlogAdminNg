@@ -1,4 +1,4 @@
-<form [formGroup]="searchBarForm" (ngSubmit)="handleSubmit()" >
+<form [formGroup]="searchBarForm" (ngSubmit)="handleSubmit($event)" >
   <mat-form-field class="search-bar">
     <mat-icon matPrefix svgIcon="search"></mat-icon>
     <input [formControl]="searchBarForm.controls.searchString" [placeholder]="placeholder" matInput [matAutocomplete]="refAutoComplete" type="text">
