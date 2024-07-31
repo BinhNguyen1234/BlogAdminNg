@@ -18,7 +18,7 @@ export class SearchBarComponent{
     ])
   });
   handleSubmit(event: SubmitEvent){
-    event.preventDefault();
+    console.log(event);
   }
 }
 
