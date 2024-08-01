@@ -13,7 +13,7 @@ import { provideAnimations } from "@angular/platform-browser/animations";
   imports: [
     BrowserModule,
     RouterModule,
-    UiModule
+    UiModule,
   ],
   providers: [
     provideRouter(routes),

@@ -9,7 +9,8 @@ import { CommonModule } from "@angular/common";
   standalone: true,
   imports: [MatSlideToggleModule, LayoutModule, NavigationModule, UiModule, CommonModule],
   template: `
-  <app-top-bar></app-top-bar>
+  <app-test></app-test>
+  <!-- <app-top-bar></app-top-bar> -->
   <app-search-bar placeholder="Search">
   <div>123123123</div>
     <mat-slide-toggle>Toggle ME!</mat-slide-toggle>
