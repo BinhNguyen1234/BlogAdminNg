@@ -3,8 +3,8 @@ import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "./app.component";
 import { provideRouter, RouterModule } from "@angular/router";
 import { routes } from "./app.routes";
-import { UiModule } from "@shared/ui/ui.module";
 import { provideAnimations } from "@angular/platform-browser/animations";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 
 
@@ -13,7 +13,7 @@ import { provideAnimations } from "@angular/platform-browser/animations";
   imports: [
     BrowserModule,
     RouterModule,
-    UiModule,
+    NgbModule,
   ],
   providers: [
     provideRouter(routes),

@@ -1,3 +1,5 @@
+/// <reference types="@angular/localize" />
+
 import { platformBrowser } from "@angular/platform-browser";
 // import {platformBrowserDynamic} from '@angular/platform-browser-dynamic'
 // import { appConfig } from './app/app.config';

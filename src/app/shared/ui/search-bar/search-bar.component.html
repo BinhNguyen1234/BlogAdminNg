@@ -1,8 +1,0 @@
-<form [formGroup]="searchBarForm" (ngSubmit)="handleSubmit($event)" >
-  <mat-form-field  class="search-bar">
-    <mat-icon matPrefix svgIcon="search"></mat-icon>
-    <input type="search" [formControl]="searchBarForm.controls.searchString" [placeholder]="placeholder" matInput [matAutocomplete]="refAutoComplete" type="text">
-    <mat-autocomplete #refAutoComplete>
-    </mat-autocomplete>
-  </mat-form-field>
-</form>

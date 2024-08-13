@@ -1,6 +1,6 @@
 import { Routes } from "@angular/router";
-import { TestLayoutComponent } from "./layout/test-layout/test-layout.component";
-import { AdminLayoutComponent } from "./layout/admin-layout/admin-layout.component";
+import { AdminComponent } from "./layout/admin/admin.component";
+import { TestComponent } from "./layout/test/test.component";
 export const routes: Routes = [
     {
         path: "",
@@ -9,58 +9,58 @@ export const routes: Routes = [
     },
     {
         path: "admin",
-        component: AdminLayoutComponent,
+        component: AdminComponent,
         children: [
             {
                 path: "dashboard",
                 title: "dashboard",
-                component: TestLayoutComponent,
+                component: TestComponent,
             },
             {
                 path: "post",
                 title: "post",
-                component: TestLayoutComponent,
+                component: TestComponent,
             },
             {
                 path: "user",
                 title: "user",
-                component: TestLayoutComponent,
+                component: TestComponent,
             },
             {
                 path: "media",
                 title: "media",
-                component: TestLayoutComponent,
+                component: TestComponent,
             },
             {
                 path: "settings",
                 title: "settings",
-                component: TestLayoutComponent,
+                component: TestComponent,
             },
             {
                 path: "categories",
                 title: "categories",
-                component: TestLayoutComponent,
+                component: TestComponent,
             },
             {
                 path: "tag",
                 title: "Tag",
-                component: TestLayoutComponent,
+                component: TestComponent,
             },
             {
                 path: "comment",
                 title: "Tag",
-                component: TestLayoutComponent,
+                component: TestComponent,
             }
         ]
     },
     {
         path: "auth",
-        component: TestLayoutComponent,
+        component: TestComponent,
         title: "auth"
     },
     {
         path: "test",
-        component: TestLayoutComponent,
+        component: TestComponent,
         title: "test"
     },
 

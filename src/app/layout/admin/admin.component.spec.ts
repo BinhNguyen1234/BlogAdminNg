@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { IconRegisterComponent } from "./icon-register.component";
+import { AdminComponent } from "./admin.component";
 
-describe("IconRegisterComponent", () => {
-  let component: IconRegisterComponent;
-  let fixture: ComponentFixture<IconRegisterComponent>;
+describe("AdminComponent", () => {
+  let component: AdminComponent;
+  let fixture: ComponentFixture<AdminComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [IconRegisterComponent]
+      imports: [AdminComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(IconRegisterComponent);
+    fixture = TestBed.createComponent(AdminComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
