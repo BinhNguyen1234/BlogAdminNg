@@ -1,55 +1,66 @@
 import { Routes } from "@angular/router";
-import { AdminComponent } from "./layout/admin/admin.component";
 import { TestComponent } from "./layout/test/test.component";
+import { CommonComponent } from "./layout/common/common.component";
+import { DashBoardComponent } from "./layout/dash-board/dash-board.component";
+import { PostComponent } from "./layout/post/post.component";
+import { UserComponent } from "./layout/user/user.component";
+import { MediaComponent } from "./layout/media/media.component";
+import { SettingsComponent } from "./layout/settings/settings.component";
+import { CategoriesComponent } from "./layout/categories/categories.component";
+import { TagComponent } from "./layout/tag/tag.component";
+import { CommentComponent } from "./layout/comment/comment.component";
 export const routes: Routes = [
+    //no protect route
     {
         path: "",
         redirectTo: "dashboard",
         pathMatch: "full"
     },
+    // protect route
     {
         path: "admin",
-        component: AdminComponent,
+        component: CommonComponent,
+        title: "admin",
         children: [
             {
                 path: "dashboard",
                 title: "dashboard",
-                component: TestComponent,
+                component: DashBoardComponent,
             },
             {
                 path: "post",
                 title: "post",
-                component: TestComponent,
+                component: PostComponent,
             },
             {
                 path: "user",
                 title: "user",
-                component: TestComponent,
+                component: UserComponent,
             },
             {
                 path: "media",
                 title: "media",
-                component: TestComponent,
+                component: MediaComponent,
             },
             {
                 path: "settings",
                 title: "settings",
-                component: TestComponent,
+                component: SettingsComponent,
             },
             {
                 path: "categories",
                 title: "categories",
-                component: TestComponent,
+                component: CategoriesComponent,
             },
             {
                 path: "tag",
                 title: "Tag",
-                component: TestComponent,
+                component: TagComponent,
             },
             {
                 path: "comment",
-                title: "Tag",
-                component: TestComponent,
+                title: "comment",
+                component: CommentComponent,
             }
         ]
     },
@@ -65,3 +76,4 @@ export const routes: Routes = [
     },
 
 ];
+

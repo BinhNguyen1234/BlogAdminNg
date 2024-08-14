@@ -5,6 +5,7 @@ import { provideRouter, RouterModule } from "@angular/router";
 import { routes } from "./app.routes";
 import { provideAnimations } from "@angular/platform-browser/animations";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { LayoutModule } from "./layout/layout.module";
 
 
 
@@ -12,8 +13,10 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule,
     NgbModule,
+    RouterModule.forRoot(routes),
+    RouterModule,
+    LayoutModule
   ],
   providers: [
     provideRouter(routes),
