@@ -1,1 +1,8 @@
-<p>slide-nav works!</p>
+
+<ul ngbNav orientation="vertical">
+    @for (navLink of navLinks; track navLink.path){
+        <li [ngbNavItem]="navLink.path">
+            <a ngbNavLink [routerLink]="navLink.path">{{navLink.title?.toString()| titlecase }}</a>
+        </li>
+    }
+</ul>

@@ -10,12 +10,6 @@ import { CategoriesComponent } from "./layout/categories/categories.component";
 import { TagComponent } from "./layout/tag/tag.component";
 import { CommentComponent } from "./layout/comment/comment.component";
 export const routes: Routes = [
-    //no protect route
-    {
-        path: "",
-        redirectTo: "dashboard",
-        pathMatch: "full"
-    },
     // protect route
     {
         path: "admin",

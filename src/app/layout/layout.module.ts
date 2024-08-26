@@ -12,13 +12,14 @@ import { DashBoardComponent } from "./dash-board/dash-board.component";
 import { CategoriesComponent } from "./categories/categories.component";
 import { PostComponent } from "./post/post.component";
 import { RouterModule } from "@angular/router";
+
 @NgModule({
   declarations: [AdminComponent, PostComponent,TestComponent, CategoriesComponent, DashBoardComponent, MediaComponent, CommonComponent, UserComponent, TagComponent, SettingsComponent],
   imports: [
     RouterModule,
     CommonModule,
-    CoreModule
-  ],
+    CoreModule,
+],
   exports: [RouterModule]
 })
 export class LayoutModule { }

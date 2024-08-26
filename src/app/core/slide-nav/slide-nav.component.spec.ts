@@ -1,8 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { SlideNavComponent } from './slide-nav.component';
+import { SlideNavComponent } from "./slide-nav.component";
 
-describe('SlideNavComponent', () => {
+describe("SlideNavComponent", () => {
   let component: SlideNavComponent;
   let fixture: ComponentFixture<SlideNavComponent>;
 
@@ -17,7 +17,7 @@ describe('SlideNavComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
