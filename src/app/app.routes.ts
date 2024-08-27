@@ -9,6 +9,7 @@ import { SettingsComponent } from "./layout/settings/settings.component";
 import { CategoriesComponent } from "./layout/categories/categories.component";
 import { TagComponent } from "./layout/tag/tag.component";
 import { CommentComponent } from "./layout/comment/comment.component";
+import { NotFoundComponent } from "./layout/not-found/not-found.component";
 export const routes: Routes = [
     // protect route
     {
@@ -68,6 +69,11 @@ export const routes: Routes = [
         component: TestComponent,
         title: "test"
     },
+    {
+        path: "**",
+        component: NotFoundComponent,
+        title: "Not Found"
+    }
 
 ];
 
