@@ -12,13 +12,28 @@ import { DashBoardComponent } from "./dash-board/dash-board.component";
 import { CategoriesComponent } from "./categories/categories.component";
 import { PostComponent } from "./post/post.component";
 import { RouterModule } from "@angular/router";
+import { LoginComponent } from "./login/login.component";
+import { AuthModule } from "../modules/features/auth/auth.module";
 
 @NgModule({
-  declarations: [AdminComponent, PostComponent,TestComponent, CategoriesComponent, DashBoardComponent, MediaComponent, CommonComponent, UserComponent, TagComponent, SettingsComponent],
+  declarations: [
+    AdminComponent, 
+    PostComponent,
+    TestComponent, 
+    CategoriesComponent, 
+    DashBoardComponent, 
+    MediaComponent, 
+    CommonComponent, 
+    UserComponent, 
+    TagComponent, 
+    SettingsComponent,
+    LoginComponent
+  ],
   imports: [
     RouterModule,
     CommonModule,
     CoreModule,
+    AuthModule,
 ],
   exports: [RouterModule]
 })

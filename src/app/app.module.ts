@@ -15,7 +15,6 @@ import { LayoutModule } from "./layout/layout.module";
     BrowserModule,
     NgbModule,
     RouterModule.forRoot(routes),
-    RouterModule,
     LayoutModule
   ],
   providers: [

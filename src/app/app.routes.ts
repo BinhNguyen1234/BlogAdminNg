@@ -10,7 +10,12 @@ import { CategoriesComponent } from "./layout/categories/categories.component";
 import { TagComponent } from "./layout/tag/tag.component";
 import { CommentComponent } from "./layout/comment/comment.component";
 import { NotFoundComponent } from "./layout/not-found/not-found.component";
+import { LoginComponent } from "./layout/login/login.component";
 export const routes: Routes = [
+    {
+        path: "login",
+        component: LoginComponent
+    },
     // protect route
     {
         path: "admin",
