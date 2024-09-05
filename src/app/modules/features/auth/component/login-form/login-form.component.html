@@ -1,10 +1,12 @@
-<form>
+<form (submit)="handleSubmit($event)">
     <label for="Username">Username</label>
     <input type="email" name="username" id="Username"/>
     <label for="Password">Password</label>
-    <input type="password" name="password" id="Password"/>
+    <app-password-input *appPasswordHidden></app-password-input>
+    <app-eyes-slash></app-eyes-slash>
+    <app-eyes-svg></app-eyes-svg>
+    <button type="submit">Login</button>
 </form>
-<app-eyes-slash></app-eyes-slash>
-<app-eyes-svg></app-eyes-svg>
+
 
 

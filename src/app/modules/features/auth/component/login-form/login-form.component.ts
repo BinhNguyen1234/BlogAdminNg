@@ -6,5 +6,8 @@ import { Component } from "@angular/core";
   styleUrl: "./login-form.component.css"
 })
 export class LoginFormComponent {
-
+  handleSubmit(e: SubmitEvent){
+    e.preventDefault();
+    console.log(e);
+  }
 }
