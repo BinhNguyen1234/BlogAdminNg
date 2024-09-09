@@ -4,11 +4,12 @@ import { LoginFormComponent } from "./component/login-form/login-form.component"
 import { UiModule } from "@shared/ui/ui.module";
 import { PasswordInputComponent } from "./component/password-input/password-input.component";
 import { PasswordHiddenDirective } from "./directives/password-hidden.directive";
+import { UnhidePasswordBtnComponent } from "./component/unhide-password-btn/unhide-password-btn.component";
 
 
 
 @NgModule({
-  declarations: [LoginFormComponent, PasswordInputComponent, PasswordHiddenDirective],
+  declarations: [LoginFormComponent, PasswordInputComponent, PasswordHiddenDirective, UnhidePasswordBtnComponent],
   imports: [
     CommonModule,
     UiModule
