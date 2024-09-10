@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 
 @Component({
   selector: "app-unhide-password-btn",
@@ -6,5 +6,10 @@ import { Component } from "@angular/core";
   styleUrl: "./unhide-password-btn.component.css"
 })
 export class UnhidePasswordBtnComponent {
-  isPasswordHide = true;
+  @Input() isPasswordHide = true;
+  @Output() isPasswordHideChange = new EventEmitter<boolean>();
+  HandleClick (_e:MouseEvent){
+    this.isPasswordHide = !this.isPasswordHide;
+    this.isPasswordHideChange.emit(this.isPasswordHide);
+  }
 }
